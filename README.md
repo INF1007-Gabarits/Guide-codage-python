@@ -1,6 +1,6 @@
-Guide de Codage Python INF1007
-Table des matières
-=================
+# Guide de Codage Python INF1007
+
+### Table des matières
    * [Généralités](#généralités)
    * [Disposition des recommandations](#disposition-des-recommandations)
       * [Importance des recommandations](#importance-des-recommandations)
