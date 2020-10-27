@@ -1,3 +1,4 @@
+Guide de Codage Python INF1007
 Table des matières
 =================
    * [Généralités](#généralités)
