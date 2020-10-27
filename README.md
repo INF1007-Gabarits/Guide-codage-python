@@ -284,10 +284,10 @@ Pratique courante. Évite les effets non désirés causés par des énoncés d'i
 ### 46 |	Les variables devraient être initialisées lorsqu'elles sont déclarées
 Cela permet d'être certain que les variables sont correctes en tout temps.
 ```python
-x = 0;
-y = 0.0;
-c = '\0';
-b = false;
+x = 0
+y = 0.0
+c = '\0'
+b = false
 # À ÉVITER: x, y, c
 ```
 > Parfois, il est impossible d'initialiser une variable à sa déclaration. Dans ces cas, la variable devrait être laissée non initialisée plutôt que de l'initialiser à une valeur qui n'a pas de signification.
