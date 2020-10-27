@@ -63,8 +63,8 @@ Le terme « calculer » (« compute » en anglais) peut être employé dans des 
 <td>
 
 ```python
-    ensemble_valeurs.calculer_moyenne(); 
-    matrice.calculer_inverse();
+ensemble_valeurs.calculer_moyenne()
+matrice.calculer_inverse()
 ```
 </td></tr><tr><td>  </td>
 <td>
@@ -77,9 +77,9 @@ Le terme « trouver » (« find » en anglais) devrait être employé dans des m
 <td>
 
 ```python
-    sommet.trouver_sommet_voisin(); 
-    matrice.trouver_petit_element(); 
-    noeud.trouver_court_chemin(noeud_destination); 
+sommet.trouver_sommet_voisin()
+matrice.trouver_petit_element()
+noeud.trouver_court_chemin(noeud_destination)
 ```
 </td></tr><tr><td>  </td>
 <td>
@@ -92,9 +92,9 @@ La forme plurielle devrait être employée pour les noms représentant une colle
 <td>
 
 ```python
-    sommets = []
-    nouveaux_elements = []
-    mots_francais = {}
+sommets = []
+nouveaux_elements = []
+mots_francais = {}
 ```
 </td></tr><tr><td>  </td>
 <td>
@@ -135,17 +135,17 @@ Le préfixe « is » en anglais ou « est » en français devrait être employé
   
  
 ```python
-  est_visible, est_actif, est_trouve, est_ouvert
-  is_visible, is_active, is_found, is_open 
+est_visible, est_actif, est_trouve, est_ouvert
+is_visible, is_active, is_found, is_open 
 ```
 L'utilisation du préfixe « est » résout un problème commun du mauvais choix du nom de la variable booléenne comme 'ETAT' ou 'INDICATEUR'. L'utilisation de « estEtat » ou « estIndicateur » simplement n'est pas suffisante, le programmeur est forcé de choisir des noms plus significatifs. L'équivalent anglophone est « is ».
 
 Il existe des alternatives au préfixe « est » qui sont appropriées dans certaines situations. Ce sont les préfixes « a » (« has »), « peut » (« can ») et « doit » (« must ») :
 
 ```python
-  a_license()
-  peut_evaluer()
-  doit_quitter = false
+a_license()
+peut_evaluer()
+doit_quitter = false
  ```
 </td></tr></table>
 
