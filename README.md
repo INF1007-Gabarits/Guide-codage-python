@@ -32,15 +32,18 @@ Le but principal de la recommandation est d'améliorer la lisibilité et de ce f
 
 #### 2 | Le nom des classes doit être en minuscules avec le premier caractère en majuscule, ainsi que le début de chaque nouveau mot.
  ```Ligne, SystemeAudio, PointDeControle ```
+ 
 Cette façon d'écrire est communément appelée UpperCamelCase. C'est une pratique courante de la communauté des développeurs de tous langages.
 
 
 #### 3 | Le nom des variables, fonctions et paramètres est en minuscule. Chaque mot est séparé d'un tiret-bas _
 ```ma_variable, matrice_lue, une_fonction()```
+
 D'autres langages commet C++ préfèrent le style lowerCamelCase pour les noms de variables et fonctions. Néanmoins en python c'est cette pratique qui est plus courante. À noter qu'il est possible d'utiliser le lowerCamelCase si c'est le style qui prédomine dans un fichier ou librairie déjà rédigé (le but est toujours d'augmenter la lisibilité).
 
 #### 5 | Le nom des fonctions commence par un verbe suivi de mots séparés par des tirets_bas.
 ```get_name(), obtenir_instance(), lire_nom(), calculer_largeur_totale()```
+
 Attention aux verbes/mots peu évocateurs ou flous.
 
 #### 13 | Les noms doivent être tous en anglais ou tous en français.
