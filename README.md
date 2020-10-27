@@ -393,24 +393,30 @@ if ((noElement < 0) or (noElement >  maxElement)
 
 
 #### 61 | Des énoncés qui exécutent du traitement ne doivent pas se trouver à l'intérieur de conditions.
-    sommets = assigner_sommets(liste, parametres);
-    if sommets is None:
-        ...
+```python
+sommets = assigner_sommets(liste, parametres);
+if sommets is None:
+...
 
-    // À ÉVITER:
-    if assigner_sommets(liste, parametres) is None:
-        ...
-Les constructions conditionnelles contenant des énoncés qui font du traitement sont simplement très difficiles à lire.
+// À ÉVITER:
+if assigner_sommets(liste, parametres) is None:
+	...
+```
+> Les constructions conditionnelles contenant des énoncés qui font du traitement sont simplement très difficiles à lire.
 
 ## Divers
 
 #### 62 | L'utilisation de nombres « magiques » dans le code doit être évitée. Les nombres autres que 0 et 1 peuvent être déclarés comme constantes nommées
-    VALEUR_MAXIMALE = 15
-    ...
-    if valeur > VALEUR_MAXIMALE   # À ÉVITER: if (valeur > 15)
-        erreur()
+```python
+VALEUR_MAXIMALE = 15
+...
+if valeur > VALEUR_MAXIMALE:   # À ÉVITER: if (valeur > 15)
+	erreur()
+```
 > Si le nombre n'a pas une signification évidente de lui-même, la lisibilité est améliorée par l'introduction d'une constante nommée.
 
 #### 64 | Les nombres constants à virgule flottante doivent toujours être écrits avec un chiffre avant le point décimal.
-	total = 0.5;     # À ÉVITER: total = .5; 
+```python
+total = 0.5;     # À ÉVITER: total = .5; 
+```
 > Le système de nombres et d'expressions de python est emprunté des mathématiques et on devrait adhérer autant que possible aux conventions mathématiques. De plus, 0.5 est plus lisible que .5; il est beaucoup plus difficile de confondre 0.5 avec l'entier 5.
