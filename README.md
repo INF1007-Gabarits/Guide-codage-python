@@ -1,10 +1,9 @@
 Table des matières
 =================
-   * [Guide de codage Python](#guide-de-codage-python)
-      * [Généralités](#généralités)
+   * [Généralités](#généralités)
    * [Disposition des recommandations](#disposition-des-recommandations)
       * [Importance des recommandations](#importance-des-recommandations)
-   * [Recommandations générales](#recommandations-générales)
+   * [Recommandations générales](#recommandations-générales)  
             * [1 | On permet n'importe quelle violation du guide si elle augmente la lisibilité](#1--on-permet-nimporte-quelle-violation-du-guide-si-elle-augmente-la-lisibilité)
    * [Conventions de nomenclature](#conventions-de-nomenclature)
       * [Conventions générales de nomenclature](#conventions-générales-de-nomenclature)
