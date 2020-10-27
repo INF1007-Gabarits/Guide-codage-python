@@ -1,6 +1,7 @@
 Table des matières
 =================
-   * [Généralités](#généralités)
+   * [Guide de codage Python](#guide-de-codage-python)
+      * [Généralités](#généralités)
    * [Disposition des recommandations](#disposition-des-recommandations)
       * [Importance des recommandations](#importance-des-recommandations)
    * [Recommandations générales](#recommandations-générales)
