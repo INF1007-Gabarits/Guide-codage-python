@@ -40,9 +40,9 @@ Le but principal de la recommandation est d'améliorer la lisibilité et de ce f
 
 #### 4 | Le nom des constantes est tout en majuscules, les mots séparés de tirets bas
 ```python
-PI
-I_WILL_NEVER_CHANGE
-NOMBRE_AVOGADRO
+PI = 3.1415
+I_WILL_NEVER_CHANGE = 21
+NOMBRE_AVOGADRO = 6.022 * 10**23
 ```
 
 #### 5 | Le nom des fonctions commence par un verbe suivi de mots séparés par des tirets_bas
