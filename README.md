@@ -303,7 +303,7 @@ while not estFini:    # ...
 ```
 
 
-#### 56 |	L'utilisation de break et continue dans les boucles devrait être évitée.
+#### 56 |	L'utilisation de break et continue dans les boucles devrait être évitée
 Ces énoncés devraient seulement être utilisés s'ils augmentent la lisibilité par rapport à leurs équivalents structurés. Le cas typique où on serait tenté d'utiliser ces instructions est celui où une situation exceptionnelle se produit à l'intérieur d'une boucle. Supposons par exemple qu'une méthode peut échouer :
 ```python
 for element in liste:
@@ -327,4 +327,41 @@ while true:
 
 ## Instructions conditionnelles
 
-#### 58 | Les expressions conditionnelles complexes doivent être évitées. Introduire plutôt des variables booléennes temporaires [1].
+#### 58 | Les expressions conditionnelles complexes doivent être évitées. Introduire plutôt des variables booléennes temporaires [1]
+```python
+est_fini = (no_Element < 0) or (no_element > max_Element)
+bool est_entree_repetee = (noElement == dernierElement) and est_entree()
+
+if (est_fini || est_entree_repetee)
+... 
+
+# À ÉVITER:
+if ((noElement < 0) or (noElement >  maxElement)
+  or noElement == dernierElement) and est_entree()
+  ... 
+```
+> En assignant les expressions à des variables booléennes, le programme obtient de la documentation automatiquement. La condition sera plus facile à lire, à déboguer (possibilité de voir la valeur de chacun des tests individuellement) et à maintenir.
+
+
+#### 61 | Des énoncés qui exécutent du traitement ne doivent pas se trouver à l'intérieur de conditions.
+    sommets = assigner_sommets(liste, parametres);
+    if sommets is None:
+        ...
+
+    // À ÉVITER:
+    if assigner_sommets(liste, parametres) is None:
+        ...
+Les constructions conditionnelles contenant des énoncés qui font du traitement sont simplement très difficiles à lire.
+
+## Divers
+
+#### 62 | L'utilisation de nombres « magiques » dans le code doit être évitée. Les nombres autres que 0 et 1 peuvent être déclarés comme constantes nommées
+    VALEUR_MAXIMALE = 15
+    ...
+    if valeur > VALEUR_MAXIMALE   # À ÉVITER: if (valeur > 15)
+        erreur()
+> Si le nombre n'a pas une signification évidente de lui-même, la lisibilité est améliorée par l'introduction d'une constante nommée.
+
+#### 64 | Les nombres constants à virgule flottante doivent toujours être écrits avec un chiffre avant le point décimal.
+	total = 0.5;     # À ÉVITER: total = .5; 
+> Le système de nombres et d'expressions de python est emprunté des mathématiques et on devrait adhérer autant que possible aux conventions mathématiques. De plus, 0.5 est plus lisible que .5; il est beaucoup plus difficile de confondre 0.5 avec l'entier 5.
