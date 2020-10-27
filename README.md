@@ -57,6 +57,23 @@ Les directives qui se retrouvent dans ce document n'ont pas toutes la même impo
 
 ## Conventions générales de nomenclature
 
+#### 17 - Le terme « calculer » (« compute » en anglais) peut être employé dans des méthodes où quelque chose est calculé. 
+```python
+ensemble_valeurs.calculer_moyenne()
+matrice.calculer_inverse()
+```
+> Donne au lecteur un indice immédiat que cette opération consomme potentiellement du temps, et si employée souvent, il pourrait utiliser le cache du résultat. L'emploi conséquent du terme améliore la lisibilité.
+
+#### 18 - Le terme « trouver » (« find » en anglais) devrait être employé dans des méthodes où on effectue une recherche. 
+
+```python
+sommet.trouver_sommet_voisin()
+matrice.trouver_petit_element()
+noeud.trouver_court_chemin(noeud_destination)
+```
+Fournit au lecteur un indice immédiat qu'il s'agit d'une méthode de recherche avec un minimum de calcul. L'emploi conséquent du terme améliore la lisibilité.
+
+
 <table> <tr><th> 17 </th><th>
 Le terme « calculer » (« compute » en anglais) peut être employé dans des méthodes où quelque chose est calculé. </th></tr>
 <tr> <td>  </td>
