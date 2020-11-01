@@ -420,3 +420,51 @@ if valeur > VALEUR_MAXIMALE:   # À ÉVITER: if (valeur > 15)
 total = 0.5;     # À ÉVITER: total = .5; 
 ```
 > Le système de nombres et d'expressions de python est emprunté des mathématiques et on devrait adhérer autant que possible aux conventions mathématiques. De plus, 0.5 est plus lisible que .5; il est beaucoup plus difficile de confondre 0.5 avec l'entier 5.
+
+## Documentation et commentaires
+Attention à la **règle 33** qui définit les en-têtes de programme
+
+#### 85 | Le code difficile à comprendre ne devrait pas être commenté, mais bien réécrit
+> En général, l'utilisation des commentaires devrait être minimisée en rendant le code auto-documenté, grâce à des choix de noms judicieux et une structure logique explicite.
+
+Les fonctions courtes, avec des noms clairs, simplifient généralement la lecture. Par exemple, utiliser
+
+    if est_pair(x):
+        ...
+en définissant une fonction 'est_pair()' qui ne fera qu'une seule ligne, plutôt que
+
+    if (x & 1) == 0: # Si x est pair.
+        ...
+	
+
+#### 86 | les commentaires devraient être écrits en anglais ou en français.
+> Voir la **règle 13**
+
+#### 89 | Les fonctions devraient être munies d'une en-tête respectant le format docstring PEP257
+
+```python
+def somme_binaire(a, b):
+    '''
+    Retourne la somme de deux nombre à virgule en format binaire.
+
+            Paramètres:
+                    a (int): un entier décimal
+                    b (int): un 2e entier décimal
+
+            Valeurs de retour:
+                    somme_binaire (str): String binaire de la somme de a et b.
+    '''
+    somme_binaire = bin(a+b)[2:]
+    return somme_binaire
+```
+> Les docstrings de fonctions permettent de documenter le code. Comprendre son architecture et son fonctionnement. Ils permettent aussi l'utilisation des fonctions de documentations de python. Par exemple la commande ```print(somme_binaire.__doc__)``` retourne le contenu du docstring:
+```
+Retourne la somme de deux nombre à virgule en format binaire.
+
+    Paramètres:
+	    a (int): un entier décimal
+	    b (int): un 2e entier décimal
+
+    Valeurs de retour:
+	    somme_binaire (str): String binaire de la somme de a et b.
+```
