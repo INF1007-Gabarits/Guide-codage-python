@@ -45,10 +45,10 @@
       * [Divers](#divers)
         * [62 | L'utilisation de nombres « magiques » dans le code doit être évitée. Les nombres autres que 0 et 1 peuvent être déclarés comme constantes nommées](#62--lutilisation-de-nombres--magiques--dans-le-code-doit-être-évitée-les-nombres-autres-que-0-et-1-peuvent-être-déclarés-comme-constantes-nommées)
         * [64 | Les nombres constants à virgule flottante doivent toujours être écrits avec un chiffre avant le point décimal.](#64--les-nombres-constants-à-virgule-flottante-doivent-toujours-être-écrits-avec-un-chiffre-avant-le-point-décimal)
-      * [Documentation et commentaires](#documentation-et-commentaires)  
-	* [85 | Le code difficile à comprendre ne devrait pas être commenté, mais bien réécrit](#85--Le-code-difficile-à-comprendre-ne-devrait-pas-être-commenté-mais-bien-réécrit)  
-	* [86 | les commentaires devraient être écrits en anglais ou en français](#86--les-commentaires-devraient-être-écrits-en-anglais-ou-en-français)  
-	* [89 | Les fonctions devraient être munies d'un en-tête respectant le format docstring PEP257](#89--Les-fonctions-devraient-être-munies-dun-en-tête-respectant-le-format-docstring-PEP257)  
+   * [Documentation et commentaires](#documentation-et-commentaires)  
+    * [85 | Le code difficile à comprendre ne devrait pas être commenté, mais bien réécrit](#85--Le-code-difficile-à-comprendre-ne-devrait-pas-être-commenté-mais-bien-réécrit)  
+    * [86 | les commentaires devraient être écrits en anglais ou en français](#86--les-commentaires-devraient-être-écrits-en-anglais-ou-en-français)  
+    * [89 | Les fonctions devraient être munies d'un en-tête respectant le format docstring PEP257](#89--Les-fonctions-devraient-être-munies-dun-en-tête-respectant-le-format-docstring-PEP257)  
 
 #Guide de codage Python
 ## Généralités
@@ -424,7 +424,7 @@ total = 0.5;     # À ÉVITER: total = .5;
 ```
 > Le système de nombres et d'expressions de python est emprunté des mathématiques et on devrait adhérer autant que possible aux conventions mathématiques. De plus, 0.5 est plus lisible que .5; il est beaucoup plus difficile de confondre 0.5 avec l'entier 5.
 
-## Documentation et commentaires
+# Documentation et commentaires
 Attention à la **règle 33** qui définit les en-têtes de programme
 
 #### 85 | Le code difficile à comprendre ne devrait pas être commenté, mais bien réécrit
