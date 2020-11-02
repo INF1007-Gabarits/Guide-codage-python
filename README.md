@@ -45,7 +45,10 @@
       * [Divers](#divers)
         * [62 | L'utilisation de nombres « magiques » dans le code doit être évitée. Les nombres autres que 0 et 1 peuvent être déclarés comme constantes nommées](#62--lutilisation-de-nombres--magiques--dans-le-code-doit-être-évitée-les-nombres-autres-que-0-et-1-peuvent-être-déclarés-comme-constantes-nommées)
         * [64 | Les nombres constants à virgule flottante doivent toujours être écrits avec un chiffre avant le point décimal.](#64--les-nombres-constants-à-virgule-flottante-doivent-toujours-être-écrits-avec-un-chiffre-avant-le-point-décimal)
-
+      * [Documentation et commentaires](#documentation-et-commentaires)
+	* [85 | Le code difficile à comprendre ne devrait pas être commenté, mais bien réécrit](#85--Le-code-difficile-à-comprendre-ne-devrait-pas-être-commenté-mais-bien-réécrit
+	* [86 | les commentaires devraient être écrits en anglais ou en français](#86--les-commentaires-devraient-être-écrits-en-anglais-ou-en-français)
+	* [89 | Les fonctions devraient être munies d'un en-tête respectant le format docstring PEP257](#89--Les-fonctions-devraient-être-munies-dun-en-tête-respectant-le-format-docstring-PEP257)
 
 #Guide de codage Python
 ## Généralités
@@ -440,7 +443,7 @@ en définissant une fonction 'est_pair()' qui ne fera qu'une seule ligne, plutô
 #### 86 | les commentaires devraient être écrits en anglais ou en français.
 > Voir la **règle 13**
 
-#### 89 | Les fonctions devraient être munies d'une en-tête respectant le format docstring PEP257
+#### 89 | Les fonctions devraient être munies d'un en-tête respectant le format docstring PEP257
 
 ```python
 def somme_binaire(a, b):
